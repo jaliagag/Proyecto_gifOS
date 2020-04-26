@@ -41,12 +41,11 @@ let sboton = () => {
 // TOGGLE BARRA DE TEMAS
 
 function mostrar() {
-    console.log("aaaa");
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
+  /*
 window.onclick = function(event) {
-  //    if (!event.target.matches('.dropbtn')) {
+      //if (!event.target.matches('.dropbtn')) {
     if (!event.target.matches('#dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
@@ -57,4 +56,4 @@ window.onclick = function(event) {
         }
       }
     }
-}
+}*/

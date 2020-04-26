@@ -41,4 +41,19 @@ a {
 .misGuizzmos:hover {
   border: 1px dotted #FFFFFF; }
 
+.padre01 {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+
+.padre:hover {
+  background: #CE36DB; }
+
+.padre01:hover .span01, .padre01:hover .imag01 {
+  border: 1px dotted #110038; }
+
+.span01, .imag01 {
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+
 /*# sourceMappingURL=dark_theme.css.map */

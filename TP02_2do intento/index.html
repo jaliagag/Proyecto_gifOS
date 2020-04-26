@@ -22,12 +22,14 @@
                 <nav>
                     <ul>
                         <li class="btn"><a id="create" class="border" href="crear_guifos/crearGuifos.html"><span>Crear Guifos</span></a></li>
-                        <li class="btn">
-                            <div class="dropdown">
-                                <a onclick="mostrar()" class="border" id="dropbtn">
-                                    Elegir tema
-                                    <img src="assets/dropdown.svg" />
-                                </a>
+                        <li>
+                            <div id="dropbtn">
+                                <div class="padre01" onclick="mostrar()">
+                                    <div class="span01">
+                                        <span>Elegir tema</span>
+                                    </div>
+                                    <span class="imag01"><img src="assets/dropdown.svg" /></span>                      
+                                </div>
                                 <div id="myDropdown" class="dropdown-content">
                                     <a id="luz" onclick="fboton()" class="option" href="#light">Sailor Day</a>
                                     <a id="oscuridad" onclick="sboton()" class="option" href="#dark">Sailor Night</a>
@@ -39,18 +41,6 @@
                 </nav>
             </div>
         </div>
-        <!-- 
-            ########################
-                    DELETE
-            ########################
-        -->
-        <a id="luz" onclick="fboton()">luuuuuuuuuz</a>
-        <a id="oscuridad" onclick="sboton()">oscuridadddddddd</a>
-        <!-- 
-            ########################
-                    DELETE
-            ########################
-        -->
     </div>
 
 

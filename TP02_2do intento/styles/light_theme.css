@@ -37,4 +37,19 @@ body {
 .misGuizzmos:hover {
   border: 1px dotted #110038; }
 
+.padre01 {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+
+.padre01:hover {
+  background: #E6BBE2; }
+
+.padre01:hover .span01, .padre01:hover .imag01 {
+  border: 1px dotted #110038; }
+
+.span01, .imag01 {
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+
 /*# sourceMappingURL=light_theme.css.map */
