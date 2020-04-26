@@ -36,8 +36,6 @@ let sboton = () => {
     head.appendChild(link);
 }
 
-// CAMBIAR DE CSS
-
 // TOGGLE BARRA DE TEMAS
 
 function mostrar() {
