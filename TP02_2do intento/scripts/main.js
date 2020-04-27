@@ -1,3 +1,6 @@
+// VARIABLES GLOBALES
+
+
 // CAMBIAR DE CSS
 // FALTA ACTUALIZAR EL ONCLICK DE LOS ELEMENTOS EN EL HTML
 
@@ -41,6 +44,8 @@ let sboton = () => {
 function mostrar() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
+
+
   /*
 window.onclick = function(event) {
       //if (!event.target.matches('.dropbtn')) {
@@ -55,3 +60,41 @@ window.onclick = function(event) {
       }
     }
 }*/
+
+// CUADRO DE BÚSQUEDA
+// CAMBIAR LUPA SI ESTÁ HACIÉNDO FOCUS EN EL INPUT
+
+let cambiaLupa = () => {
+  let queEstilo = document.getElementById("estilardo").getAttribute("href");
+  let reemplazaLupa = document.getElementById("lupita");
+  let lupitaBuscar = document.getElementById("btnBuscar");
+
+  if(queEstilo == "styles/light_theme.css") {
+    reemplazaLupa.src = "assets/lupa.svg";
+    lupitaBuscar.style.background = "#F7C9F3";
+    lupitaBuscar.style.color = "#110038";
+  } else if (queEstilo == "styles/dark_theme.css") {
+    reemplazaLupa.src = "assets/lupa_light.svg";
+    lupitaBuscar.style.background = "#EE3EFE";
+    lupitaBuscar.style.color = "#FFFFFF";
+  }
+}
+
+let vuelveLupaGris = () => {
+  let queEstilo = document.getElementById("estilardo").getAttribute("href");
+  let reemplazaLupa = document.getElementById("lupita");
+  let lupitaBuscar = document.getElementById("btnBuscar");
+
+  if(queEstilo == "styles/light_theme.css") {
+    reemplazaLupa.src = "assets/lupa_inactive.svg";
+    lupitaBuscar.style.background = "#E6E6E6";
+    lupitaBuscar.style.color = "#B4B4B4";
+  } else if (queEstilo == "styles/dark_theme.css") {
+    reemplazaLupa.src = "assets/lupa_inactive.svg";
+    lupitaBuscar.style.background = "#808080";
+    lupitaBuscar.style.color = "#8F8F8F";
+  }
+}
+
+var algoEscribio = document.getElementById("cuadroBusqueda").addEventListener("focus", cambiaLupa, true);
+var ySeFue = document.getElementById("cuadroBusqueda").addEventListener("blur", vuelveLupaGris, true);
