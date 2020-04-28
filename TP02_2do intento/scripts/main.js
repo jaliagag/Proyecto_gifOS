@@ -1,6 +1,25 @@
 // VARIABLES GLOBALES
 
 
+// ONLOAD
+
+let theme_selection = () => {
+  if (typeof(Storage) !== "undefined") {
+    var hayAlgoQ = window.localStorage.getItem("theme");
+    //console.log(hayAlgoQ);
+    if(hayAlgoQ == ""){
+      fboton();
+    } else if (hayAlgoQ == "light"){
+      fboton();
+    } else {
+      console.log("paso")
+      sboton();
+    }
+  } else {
+    console.log("Al parecer tu navegador no quiere que guardemos información de vos, pero ¡qué persona cuidadosa!");
+  }
+}
+
 // CAMBIAR DE CSS
 // FALTA ACTUALIZAR EL ONCLICK DE LOS ELEMENTOS EN EL HTML
 
@@ -19,11 +38,12 @@ let fboton = () => {
     link.id = "estilardo";
   
     head.appendChild(link);
-    
+
+    window.localStorage.setItem("theme", "light");
 }
   
 let sboton = () => {
-    
+
     var elim = document.getElementById("estilardo");
     elim.remove();
     
@@ -37,6 +57,8 @@ let sboton = () => {
     link.id = "estilardo";
   
     head.appendChild(link);
+
+    window.localStorage.setItem("theme", "dark");
 }
 
 // TOGGLE BARRA DE TEMAS
